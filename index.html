@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Google Map</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0,width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="mapContainer"></div>
+      <div class="bst-sidebar flex-column left-div">
+        <div class="bst-filter">
+          <form action="" id="input_search" class="flex-column">
+            <header>
+              <h1>Hotels</h1>
+              <h2>Search for Hotels</h2>
+            </header>
+            <input type="text" id="search" placeholder="Destination" />
+            <ul id="auto_suggest_list"></ul>
+            <input
+              type="text"
+              id="countries_input"
+              placeholder="Choose Country"
+            />
+            <ul id="countries_list"></ul>
+            <button type="submit" id="submit" class="lis-primary-btn">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+    ></script>
+  </body>
+</html>
