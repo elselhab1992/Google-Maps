@@ -14,7 +14,7 @@ async function initMap() {
 
 window.initMap = initMap;
 
-const API_KEY = "ece11b1a63msh8eb58a5f953dfbcp14b191jsnf9dbbf2f647b";
+const API_KEY = "secret ;)";
 
 const fetchCountries = async () => {
   const url =
